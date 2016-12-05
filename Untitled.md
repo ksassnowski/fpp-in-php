@@ -38,7 +38,7 @@ array_map(function ($x) {
 
 ---
 
-# Mapping is not specific to lsits
+# Mapping is not specific to lists
 
 ---
 
@@ -215,11 +215,11 @@ class Arr implements Functor
 <p style="margin-bottom: 170px"></p>
 
 ```php
-$arr = function ($x) { return $x + 1; };
+$add1 = function ($x) { return $x + 1; };
 
 $myArr = new Arr([1, 2, 3, 4]);
 
-$mapped = $myArr->fmap($arr);
+$mapped = $myArr->fmap($add1);
 
 // $mapped is now Arr([2, 3, 4, 5])
 ```
